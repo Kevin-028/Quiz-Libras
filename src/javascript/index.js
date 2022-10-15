@@ -176,25 +176,27 @@ function showResult() {
   info_box.classList.remove("activeInfo"); //hide info box
   quiz_box.classList.remove("activeQuiz"); //hide quiz box
   result_box.classList.add("activeResult"); //show result box
-  pato = "<img class=\"pato\" src=\"./src/gifs/pato-bailar.gif\"> <br>";
+  patoFeliz = "<img class=\"pato\" src=\"./src/gifs/pato-bailar.gif\"> <br>";
+  patoDeceocionado = "<img class=\"pato\" src=\"./src/gifs/pato-bailar.gif\"> <br>";
+  patoSad = "<img class=\"pato\" src=\"./src/gifs/pato-bailar.gif\"> <br>";
 
   const music = new Audio('./src/gifs/falha.mp3');
   const scoreText = result_box.querySelector(".score_text");
-  if (userScore > 3) {
+  if (userScore > 8) {
     // if user scored more than 3
     //creating a new span tag and passing the user score number and total question number
     let scoreTag =
-      pato +
+      patoFeliz +
       "<span>E parabéns!! 🎉, você fez <p>" +
       userScore * 10 +
       "</p> de <p>" +
       questions.length * 10 +
       "</p></span>";
     scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
-  } else if (userScore > 1) {
+  } else if (userScore > 5) {
     // if user scored more than 1
     let scoreTag 
-      pato +
+      patoDeceocionado +
       "<span>E legal 😎, você fez  <p>" +
       userScore * 10 +
       "</p> de <p>" +
@@ -205,6 +207,7 @@ function showResult() {
     // if user scored less than 1
     music.play();
     let scoreTag =
+    patoSad +
       "<span>e desculpe 😐, Você fez apenas <p>" +
       userScore * 10 +
       "</p> de <p>" +
