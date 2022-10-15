@@ -6,7 +6,7 @@ let questions = [
       type: "multiple",
       difficulty: "easy",
       question: "Qual é a palavra? Essa palavra é arbitrária ou icônica?",
-      sinal:"oi.mp4",
+      sinal:"Oi.mp4",
       answer: "oi? | Arbitrário",
       options: [
         "Tudo bem? |Icônico",
@@ -36,7 +36,7 @@ let questions = [
       type: "multiple",
       difficulty: "easy",
       question: "Qual é a palavra? Essa palavra é arbitrária ou icônica?",
-      sinal:"coracao.mp4",
+      sinal:"Coracao.mp4",
       answer: "Coração | Icônico",
       options: [
         "Esposo | Icônico",
