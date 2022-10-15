@@ -177,12 +177,12 @@ function showResult() {
   quiz_box.classList.remove("activeQuiz"); //hide quiz box
   result_box.classList.add("activeResult"); //show result box
   patoFeliz = "<img class=\"pato\" src=\"./src/gifs/pato-bailar.gif\"> <br>";
-  patoDeceocionado = "<img class=\"pato\" src=\"./src/gifs/pato-bailar.gif\"> <br>";
-  patoSad = "<img class=\"pato\" src=\"./src/gifs/pato-bailar.gif\"> <br>";
+  patoDeceocionado = "<img class=\"pato\" src=\"./src/gifs/desapontado.gif\"> <br>";
+  patoSad = "<img class=\"pato\" src=\"./src/gifs/pato-sad.gif\"> <br>";
 
   const music = new Audio('./src/gifs/falha.mp3');
   const scoreText = result_box.querySelector(".score_text");
-  if (userScore > 8) {
+  if (userScore > 10) {
     // if user scored more than 3
     //creating a new span tag and passing the user score number and total question number
     let scoreTag =
