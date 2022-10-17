@@ -7,13 +7,15 @@
     <link rel="manifest" href="./public/manifest.json">
     <link rel="shortcut icon" href="./public/favicon.ico">
     <title>Incrível Quiz</title>
-    <link rel="stylesheet" href="./src/styles/index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3/css/all.min.css"
     />
+      
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
   </head>
-  <body id="page-home">
+  <body id="page-home bg-secondary">
     <div id="loader"></div>
     <!-- start Quiz button -->
     <div class="start_btn">
@@ -25,11 +27,11 @@
     </div>
 
     <!-- Info Box -->
-    <div class="info_box">
+    <div class="info_box ">
       <div class="info-title"><span>Algumas regras deste Quiz</span></div>
       <div class="info-list">
         <div class="info">
-          1. Você terá apenas<span> 15 segundos</span> para cada pergunta.
+          1. Você terá apenas<span> 30 segundos</span> para cada pergunta.
         </div>
         <div class="info">
           2. Depois de selecionar sua resposta não pode ser desfeita.
@@ -68,7 +70,6 @@
           <!-- Here I've inserted options from JavaScript -->
         </div>
       </section>
-      <img class="" src="" alt="" width="150px">
       <!-- footer of Quiz Box -->
       <footer>
         <div class="total_que">
@@ -98,5 +99,6 @@
     <script src="./src/data/questions.js"></script>
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="./src/javascript/index.js"></script>
+
   </body>
 </html>

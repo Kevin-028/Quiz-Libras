@@ -146,7 +146,7 @@ let questions = [
       category: "Geral",
       type: "multiple",
       difficulty: "medium",
-      question: "Qual é a palavra? Essa palavra é arbitrária ou icônica?",
+      question: "Qual é a Frase?",
       sinal:"AmoMinhaFamilia.mp4",
       answer: "Eu amo minha família",
       options: [
@@ -161,7 +161,7 @@ let questions = [
       category: "Geral",
       type: "multiple",
       difficulty: "medium",
-      question: "Qual é a palavra? Essa palavra é arbitrária ou icônica?",
+      question: "Qual é a Frase?",
       sinal:"AprendendoLibras.mp4",
       answer: "Estou aprendendo libras",
       options: [
@@ -176,9 +176,9 @@ let questions = [
       category: "Geral",
       type: "multiple",
       difficulty: "medium",
-      question: "Qual é a palavra? Essa palavra é arbitrária ou icônica?",
+      question: "Qual é a Frase?",
       sinal:"SouOuvinteLibras.mp4",
-      answer: "Oi, bom dia! Você é surdo? eu sou ouvinte, estou aprendendo Libras",
+      answer: "Estou aprendendo libras",
       options: [
         "Oi, Boa tarde! Você é surdo? eu sou ouvinte e sei Libras",
         "Oi, Bom dia! Você é surdo? eu sou ouvinte, estou aprendendo Libras",
