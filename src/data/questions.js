@@ -25,9 +25,9 @@ let questions = [
       answer: "Tudo bem? | Icônico",
       options: [
         "Tudo bem? | Icônico",
-        "oi? | Arbitrário",
         "Como voce esta? | Arbitrário",
-        "Amo você? | Icônico",
+        "Amo você? | Arbitrário",
+        "Tudo bem? | Ar",
       ],
     },
     {
@@ -42,7 +42,7 @@ let questions = [
         "Esposo | Icônico",
         "Coração | Icônico",
         "Corno | Arbitrário",
-        "Esposa |Icônico",
+        "Esposa | Icônico",
       ],
     },
     {
@@ -75,9 +75,6 @@ let questions = [
         "Pai ? |Icônico",
       ],
     },   
-
-
-
 
     {
       numb: 6,
