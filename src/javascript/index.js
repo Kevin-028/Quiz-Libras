@@ -91,6 +91,7 @@ next_btn.onclick = () => {
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
     showResult(); //calling showResult function
+    
   }
 };
 

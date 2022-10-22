@@ -105,8 +105,8 @@ let questions = [
       options: [
         "Boa tarde | Icônico",
         "Boa noite | Icônico",
-        "Boa noite | Arbitrário",
         "Bom dia | Icônico",
+        "Boa noite | Arbitrário",
       ],
     },
     {
@@ -178,12 +178,12 @@ let questions = [
       difficulty: "medium",
       question: "Qual é a Frase?",
       sinal:"SouOuvinteLibras.mp4",
-      answer: "Estou aprendendo libras",
+      answer: "Oi, Bom dia! Você é surdo? eu sou ouvinte.",
       options: [
-        "Oi, Boa tarde! Você é surdo? eu sou ouvinte e sei Libras",
-        "Oi, Bom dia! Você é surdo? eu sou ouvinte, estou aprendendo Libras",
-        "Oi, Bom dia! Você é ouvinte? eu sou surdo, estou aprendendo Libras",
+        "Oi, Boa tarde! Você é surdo? eu sou ouvinte e sei Libras.",
+        "Oi, Bom dia! Você é ouvinte? eu sou surdo.",
         "Oi, Boa noite! vamos dormir?",
+        "Oi, Bom dia! Você é surdo? eu sou ouvinte.",
       ],
     },
 
