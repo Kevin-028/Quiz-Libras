@@ -25,7 +25,7 @@
 .start_btn,
 .info_box,
 .quiz_box,
-.result_box {
+.result_box,.info_dic {
     display: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -205,7 +205,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 215px;
+    width: 152px;
 }
 
 .quiz_box header .timer .time_left_txt {
@@ -470,16 +470,14 @@ footer button.show {
 
 /* end - high Scores */
 
-#page-home{
+.page-home{
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0 auto;
     padding: 0;
 
     min-height: 100vh;
-
 }
 
 #loader {
@@ -504,6 +502,22 @@ footer button.show {
         transform: rotate(360deg);
     }
 }
+@keyframes progress-time {
+    0% {
+        width:0%;
+    }
+
+    100% {
+        width:100%;
+    }
+}
+.timer-progress{
+    animation-duration: 30s;
+    animation-name: progress-time;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
 
 .hidden {
     display: none;
@@ -514,4 +528,20 @@ footer button.show {
 }   
 .qcode{
    width: 250px;    
+}
+
+.duv{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.duv span{
+    font-size: 10px;
+}
+
+.duv i{
+    color: #5d9eff
 }

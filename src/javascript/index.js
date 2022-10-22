@@ -24,7 +24,10 @@ start_btn.onclick = () => {
 
 // if exitQuiz button clicked
 exit_btn.onclick = () => {
+  start_btn_home.classList.remove("hidden");
+
   info_box.classList.remove("activeInfo"); //hide info box
+
 };
 
 // if continueQuiz button clicked
@@ -40,7 +43,7 @@ continue_btn.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(15); //calling startTimer function
+    startTimer(30); //calling startTimer function
     startTimerLine(0);
   }
 };
@@ -119,7 +122,8 @@ function showQuetions(index) {
     "</span></p></div>" +
     '<div class="option"><p class="choice-prefix">D</p><p class="choice-text" data-number="4"><span class="question">' +
     questions[index].options[3] +
-    "</span></p></div>";
+    "</span></p></div>"
+  ;
 
   que_text.innerHTML = que_tag; //adding new span tag inside que_tag
   que_video.innerHTML = option_video;
@@ -218,8 +222,11 @@ function showResult() {
 function startTimer(time) {
   counter = setInterval(timer, 1000);
   function timer() {
+
+
     timeCount.textContent = time; //changing the value of timeCount with time value
     time--; //decrement the time value
+
     if (time < 9) {
       //if timer is less than 9
       let addZero = timeCount.textContent;
@@ -231,6 +238,7 @@ function startTimer(time) {
       timeText.textContent = "Intervalo"; //change the time text to time off
       const allOptions = option_list.children.length; //getting all option items
       let correcAns = questions[que_count].answer; //getting correct answer from array
+
       for (i = 0; i < allOptions; i++) {
         if (option_list.children[i].textContent == correcAns) {
           //if there is an option which is matched to an array answer
@@ -247,12 +255,12 @@ function startTimer(time) {
 }
 
 function startTimerLine(time) {
-  counterLine = setInterval(timer, 29);
+  counterLine = setInterval(timer, 30);
   function timer() {
-    time += 1; //upgrading time value with 1
-    time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-    if (time > 549) {
-      //if time value is greater than 549
+    time += .10; //upgrading time value with 1
+    time_line.style.width = time + "%"; //increasing width of time_line with px by time value
+    if (time > 100) {
+      //if time value is greater than 100
       clearInterval(counterLine); //clear counterLine
     }
   }

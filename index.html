@@ -7,15 +7,13 @@
     <link rel="manifest" href="./public/manifest.json">
     <link rel="shortcut icon" href="./public/favicon.ico">
     <title>Incrível Quiz</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3/css/all.min.css"
-    />
-      
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./src/styles/index.css" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
   </head>
-  <body id="page-home bg-secondary">
+  <body id="" class="page-home bg-dark">
     <div id="loader"></div>
     <!-- start Quiz button -->
     <div class="start_btn">
@@ -49,13 +47,15 @@
         <button class="restart">Continuar</button>
       </div>
     </div>
+    <!-- Info dicas -->
+
     <!-- Quiz Box -->
     <div class="quiz_box">
       <header>
         <div class="title">Incrível Quiz</div>
         <div class="timer">
           <div class="time_left_txt">Tempo Restante</div>
-          <div class="timer_sec">15</div>
+          <div class="timer_sec">30</div>
         </div>
         <div class="time_line"></div>
       </header>
@@ -63,9 +63,13 @@
         <div class="que_text">
           <!-- Here I've inserted question from JavaScript -->
         </div>
+        <div class="duv">
+          <i class="bi bi-patch-question-fill" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></i><br>
+        </div>
         <div class="que_video">
           <!-- Here I've inserted question from JavaScript -->
         </div>
+
         <div class="option_list">
           <!-- Here I've inserted options from JavaScript -->
         </div>
@@ -95,10 +99,35 @@
         <button class="quit">Sair do Quiz</button>
       </div>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="info-list fs-2">
+              <div class="info">
+                1. Palavra <strong>arbritraria</strong>:
+                <br> sinal que não guarda nenhuma relação visível com o seu referente (não é possível compreender apenas com o sinal .
+              </div>
+              <div class="info">
+                2. Palavra <strong>iconicas</strong>: <br> sinal que permite  identificar de maneira única.
+              </div>
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Inside this JavaScript file I've inserted Questions and Options only -->
     <script src="./src/data/questions.js"></script>
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="./src/javascript/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
   </body>
 </html>
