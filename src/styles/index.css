@@ -532,16 +532,5 @@ footer button.show {
 
 .duv{
     text-align: center;
-    height: 20px;
-    width: 20px;
     font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.duv span{
-    font-size: 10px;
-}
-
-.duv i{
-    color: #5d9eff
 }
